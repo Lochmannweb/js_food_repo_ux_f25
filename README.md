@@ -23,4 +23,4 @@ Front-end application on food recipes that consumes 2 APIs.
 JavaScript / CSS3 / HTML5
 
 ## Author
-Arturo
+Line
