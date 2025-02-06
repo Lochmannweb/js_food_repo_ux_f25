@@ -1,0 +1,47 @@
+@import 'variables.css';
+
+#contactInfo {
+    margin-bottom: 1rem;
+}
+
+address {
+    font-style: normal;
+
+    #physical_address{
+        margin-bottom: 1rem;
+    }
+}
+
+form {
+    margin-top: 1rem;
+
+    fieldset {
+        padding: 0.5rem;
+        border-radius: 1rem;
+        gap: 1rem;
+
+        /* add denne styling til dem alle undtagen den sidste */
+        div:not(:last-of-type) {
+            margin-bottom: 0.5rem;
+            * {
+                display: block;
+                width: 100%;
+            }
+
+            textarea {
+                height: 6rem;
+            }
+        }
+
+        button {
+            padding: 0.5rem 2rem;
+            border-radius: 1.5rem;
+            font-family: var(--fontMain);
+            font-size: 1rem;
+            color: var(--colorBgMain);
+            background-color: var(--colorSecondary);
+            border: none;
+        }
+    }
+}
+

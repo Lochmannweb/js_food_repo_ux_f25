@@ -12,7 +12,36 @@ body {
     font-family: var(--fontMain);
 }
 
-/* CSS Nesting */
+header, footer {
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+header {
+    color: var(--colorSecondary);
+
+    h1 {
+        font-family: var(--fontTitle);
+    }
+}
+
+main {
+    margin: 1rem;
+}
+
+p {
+    max-width: 80ch;
+    /* text-align: justify; */
+}
+
+footer {
+    color: var(--colorBgMain);
+    background-color: var(--colorSecondary);
+    /* width: 80%; */
+    /* or width 80vw */
+}
+
+/* CSS Nesting fra caniuse.com */
 nav {
     ul {
         display: flex;
@@ -21,6 +50,11 @@ nav {
         gap: 1rem;
         li {
             list-style-type: none;
+            a {
+                color: var(--colorMain);
+            }
         }
     }
 }
+
+
