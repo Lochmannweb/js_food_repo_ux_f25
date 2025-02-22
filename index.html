@@ -3,27 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Repo</title>
+    <title>The Movie Database</title>
     <link rel="stylesheet" href="/CSS/styles.css">
+    <!-- <link rel="stylesheet" href="/CSS/recipes.css"> -->
+    <script src="js/playing.js" type="module"></script>
 </head>
 <body>
-    <header>
-        <h1>Food Repo</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html" title="Home page">Home</a></li>
-            <li><a href="about.htm" title="About page">About</a></li>
-            <li><a href="contact.htm" title="Contact page">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <p>Up to come</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 KEA - Københavns Erhvervsakademi Development</p>
-    </footer>
+    <div id="container">
+        <header>
+            <h4 id="header">The Movie Database</h4>
+        </header>
+        <nav>
+            <a href="?topic=now_playing" title="Now Playing">Now Playing</a>
+            <a href="?topic=popular" title="Popular">Popular</a>
+            <a href="?topic=top_rated" title="Top Rated">Top Rated</a>
+            <a href="?topic=upcoming" title="Upcoming">Upcoming</a>
+        </nav>
+        <main>
+            <section id="movie-list"></section>
+        </main>
+        <footer>
+            <p>The Movies Database</p>
+            <p>&copy; 2025</p>
+        </footer>
+    </div>
 </body>
+<template id="movie-card">
+    <article>
+        <header>
+            <h2></h2>
+        </header>
+        <section>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <h3>Overview <br> <span id="overviewContent" class="pill"></span></h3>
+            </div>
+        </section>
+        <div>
+            <p id="releaseDate" class="pill"></p>
+        </div>
+    </article>
+</template>
 </html>
