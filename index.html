@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Movie Database</title>
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- <link rel="stylesheet" href="/CSS/recipes.css"> -->
     <script src="js/playing.js" type="module"></script>
 </head>
@@ -14,10 +14,10 @@
             <h4 id="header">The Movie Database</h4>
         </header>
         <nav>
-            <a href="?topic=now_playing" title="Now Playing">Now Playing</a>
-            <a href="?topic=popular" title="Popular">Popular</a>
-            <a href="?topic=top_rated" title="Top Rated">Top Rated</a>
-            <a href="?topic=upcoming" title="Upcoming">Upcoming</a>
+            <button data-topic="now_playing" title="Now Playing">Now Playing</button>
+            <button data-topic="popular" title="Popular">Popular</button>
+            <button data-topic="top_rated" title="Top Rated">Top Rated</button>
+            <button data-topic="upcoming" title="Upcoming">Upcoming</button>
         </nav>
         <main>
             <section id="movie-list"></section>

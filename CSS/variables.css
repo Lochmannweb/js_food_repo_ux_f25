@@ -1,7 +1,28 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Delius+Unicase:wght@400;700&family=DynaPuff:wght@400..700&family=Keania+One&family=Lily+Script+One&family=MonteCarlo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swaptext=hdsjakgæh'); */
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Delius+Unicase:wght@400;700&family=DynaPuff:wght@400..700&family=Keania+One&family=Lily+Script+One&family=MonteCarlo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Tangerine:wght@400;700&display=swap&text=NPTURowlyingapurtedcm');
+/* @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Delius+Unicase:wght@400;700&family=DynaPuff:wght@400..700&family=Keania+One&family=Lily+Script+One&family=MonteCarlo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Tangerine:wght@400;700&display=swap&text=NPTURowlyingapurtedcm'); */
 /* text=FodRep */
 
 :root {
-    --fontTitle: Russo One, serif;
+    --mainColor: white;
+    --secondaryColor: black;
+    --ofWhite: lightgray;
+    --containerColor: #010910;
+    --articleColor: #000000bf;
+    --articleBorderColor: #000000bf;
+    --boxShadowColor: #ffffff1f;
+    --borderBottomH2: darkgray;
+    --releaseDateColor: gray;
+    --overviewContent: #cdcdcd;
+
+    --paddingXS: 0.1rem;
+    --paddingS: 1rem;
+    --paddingM: 2rem;
+    --paddingL: 1rem;
+
+    --borderRadius: 1rem;
+
+    --fontSizeS: 1rem;
+    --fontSizeM: 2rem;
+    --fontSizeL: 3rem;
+    --fontSizeXL: 5rem;
 } 

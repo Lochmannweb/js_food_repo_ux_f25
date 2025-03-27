@@ -16,31 +16,27 @@ h4 {
 }
 
 body {
-    color: white;
-    background-image: url('/curtains.jpg');
-    background-size: 100%;
-    backdrop-filter: invert(1);
+    color: var(--mainColor);
     position: absolute;
     z-index: 50;
 
     header {
-        padding: 0.1rem 2rem;
-        background-color: lightgray;
-        color: black;
+        padding: var(--paddingXS) var(--paddingM);
+        background-color: var(--ofWhite);
+        color: var(--secondaryColor);
         font-weight: normal;
         font-size: small;
 
         @media (min-width: 640px) {
-            background-color: white;
+            background-color: var(--mainColor);
         }
     }
 
     footer {
         display: flex;
         justify-content: space-between;
-        background-color: #010910;
         margin-top: 1rem;
-        padding: 1rem;
+        padding: var(--paddingS);
 
         @media (min-width: 640px) {
             margin-top: 4rem;
@@ -49,26 +45,27 @@ body {
 }
 
 #container {
-    background-color: #00000099;
+    background-color: var(--containerColor);
 }
 
 nav {
-    background-color: #010910;
+    background-color: var(--secondaryColor);
     display: grid;
-    /* gap: 1rem; */
     padding: none;
 
     @media (min-width: 640px) {
         display: flex;
-        padding: 0 1rem;
+        padding: 0 var(--paddingS);
     }
 
     
-    a {
+    button {
         text-align: center;
+        background-color: var(--secondaryColor);
+        border: 1px solid var(--secondaryColor);
         text-decoration: none;
-        color: white;
-        padding: 1rem;
+        color: var(--mainColor);
+        padding: var(--paddingS);
         font-size: 1rem;
 
         @media (min-width: 640px) {
@@ -76,15 +73,10 @@ nav {
         }
     }
 
-    a.active {
-        background: white;
-        color: black;
-        padding: 1rem;
-        /* margin-left: -1rem;
-        margin-right: -1rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        margin-top: -1rem; */
+    button.active{
+        color: var(--secondaryColor);
+        background-color: var(--mainColor);
+        border: 1px solid var(--mainColor);
     }
 }
 
@@ -94,15 +86,14 @@ nav {
 }
 
 article {
-    /* background-image: url('/curtains.jpg'); */
-    background-color: #000000bf;
-    border: 2px solid #000205;
-    padding: 1rem;
-    border-radius: 1rem;
+    background-color: var(--articleColor);
+    border: 2px solid var(--articleBorderColor);
+    padding: var(--paddingS);
+    border-radius: var(--borderRadius);
     margin-top: 1.5rem;
     width: 90%;
     justify-self: center;
-    box-shadow: 0px 19px 21px #000000;
+    box-shadow: 0px 9px 21px var(--boxShadowColor);
 
     @media (min-width: 640px) {
         width: 80%;
@@ -115,18 +106,18 @@ article {
     }
 
     header {
-        padding: 1rem;
+        padding: var(--paddingS);
         background-color: transparent;
 
         h2 {
             background-color: transparent;
-            padding: 2rem;
+            padding: var(--paddingM);
             margin: -2rem;
-            border-radius: 1rem 1rem 0 0;
+            border-radius: var(--borderRadius) var(--borderRadius) 0 0;
             margin-bottom: 0rem;
-            color: white;
-            font-size: 2rem;
-            border-bottom: 1px solid darkgray;
+            color: var(--mainColor);
+            font-size: var(--fontSizeM);
+            border-bottom: 1px solid var(--borderBottomH2);
         }
     }
 
@@ -144,7 +135,7 @@ article {
 
         img {
             width: 100%;
-            border-radius: 1rem;
+            border-radius: var(--borderRadius);
 
             @media (min-width: 1240px) {
                 width: auto;
@@ -156,20 +147,20 @@ article {
     
             span {
                 font-weight: normal;
-                font-size: 1rem;
+                font-size: var(--fontSizeS);
         
                 @media (min-width: 640px) {
-                    font-size: 5rem;
+                    font-size: var(--fontSizeXL);
                 }
             }
         }
     
         #overviewContent {
-            font-size: 1rem;
-            color: #cdcdcd;
+            font-size: var(--fontSizeS);
+            color: var(--overviewContent);
 
             @media (min-width: 640px) {
-                font-size: 1.2rem;
+                font-size: var(--fontSizeS);
             }
         }
     }
@@ -183,11 +174,11 @@ article {
         }
 
         #releaseDate {
-            font-size: 0.8rem;
-            color: gray;
+            font-size: var(--fontSizS);
+            color: var(--releaseDateColor);
 
             @media (min-width: 640px) {
-                font-size: 1rem;
+                font-size: var(--fontSizeS);
             }
         }
     }
