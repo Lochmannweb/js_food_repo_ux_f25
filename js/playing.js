@@ -28,13 +28,13 @@ const fetchMovies = async (topic) => {
 
 // Handle button clicks
 document.querySelectorAll("nav button").forEach(button => {
-    button.addEventListener("click", () => {
+    button.addEventListener('click', () => {
         const topic = button.dataset.topic;
         history.pushState({}, "", `?topic=${topic}`);
         fetchMovies(topic);
     });
 });
 
-// Load initial movies
+
 const initialTopic = new URLSearchParams(window.location.search).get("topic") || "now_playing";
 fetchMovies(initialTopic);
